@@ -1,10 +1,14 @@
-"user strict";
+"user strict"
 
-const rate = 1.1;
+let command;
 
-for (let price = 150; price <= 160; price++) {
-  console.log(`price: ${price}`);
-  for (let amount= 120; amount <= 140; amount+=10) {
-    console.log(price * amount * rate);
+do { 
+  command = Number(prompt('menu 1, 2, 3 or 0 to exit'));
+  if (command == 0) {
+    console.log('Exited');
+  } else {
+    console.log(`Menu ${command} prosecced.`);
   }
-}
+} while (command !== 0);
+
+//for → while →dowhile
